@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".TaskList" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:clickable="false"
+        android:dividerHeight="10dp"
+        android:longClickable="false" >
+    </ListView>
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Refresh" />
+
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/refreshButton"
+        android:layout_alignBottom="@+id/refreshButton"
+        android:layout_alignParentLeft="true"
+        android:text="Add Task" />
+
+    <Button
+        android:id="@+id/logOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/refreshButton"
+        android:layout_alignBottom="@+id/refreshButton"
+        android:layout_alignParentRight="true"
+        android:text="Log Out" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/refreshButton"
+        android:layout_centerHorizontal="true"
+        android:text="Click a task to edit"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

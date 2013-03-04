@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTask" >
+
+    <EditText
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="text"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/categoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/descriptionText"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Category"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/dueDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/categoryText"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Due Date, Click to open Date Picker" />
+
+    <TextView
+        android:id="@+id/locationText"
+        style="@android:style/Widget.EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dueDateText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dueDateText"
+        android:layout_marginTop="38dp"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Location" />
+
+    <EditText
+        android:id="@+id/notesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/locationText"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notesText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Add Task" />
+
+</RelativeLayout>
